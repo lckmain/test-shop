@@ -38,13 +38,13 @@ html, body
 	height: 100%
 
 body
+	color: #000
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
-
 .img-responsive
 	display: block
 	max-width: 100%
@@ -56,5 +56,14 @@ body
 ::selection
 	background-color: $accent
 	color: #fff
+
+.some_list
+	list-style: none
+	li
+		padding-left: 50px
+		a
+			font-size: larger
+			color: yellow
+			&:before
 
 @import "media" // Всегда в конце
