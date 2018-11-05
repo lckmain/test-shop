@@ -38,6 +38,7 @@ html, body
 	height: 100%
 
 body
+	color: #000
 	font-size: 16px
 	min-width: 320px
 	position: relative
@@ -56,5 +57,48 @@ body
 ::selection
 	background-color: $accent
 	color: #fff
+
+//header
+.header_top
+	display: flex
+	justify-content: space-between
+	padding: 10px 0px
+	border-bottom: 1px solid #edeff1
+	margin-bottom: 10px
+.header_top__item
+	padding: 0
+	margin: 0
+	list-style: none
+	display: flex
+	a
+		display: flex
+		align-items: center
+		margin-right: 15px
+		text-decoration: none
+		color: #000
+		img
+			margin-right: 7px
+	&.social
+		a
+			margin-left: 15px
+			margin-right: 0
+			width: 25px
+.header_bottom
+	display: flex
+	.header_bottom__user-help
+		margin-left: auto
+		display: flex
+.header_bottom__menu
+	ul
+		display: flex
+		padding: 0
+		margin: 0 0 0 20px
+		list-style: none
+		li
+			a
+				margin-right: 15px
+			&:last-child
+				a
+					margin-right: 0
 
 @import "media" // Всегда в конце
