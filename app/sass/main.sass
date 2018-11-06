@@ -45,7 +45,6 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
-
 .img-responsive
 	display: block
 	max-width: 100%
@@ -57,7 +56,6 @@ body
 ::selection
 	background-color: $accent
 	color: #fff
-
 //header
 .header_top
 	display: flex
@@ -100,5 +98,33 @@ body
 			&:last-child
 				a
 					margin-right: 0
+//footer
+.footer_inner
+	display: flex
+	padding: 90px 0
+	justify-content: space-between
+.footer_item__payment
+	h4
+		color: $color
+		font-weight: 600
+.footer_item__info
+	display: flex
+	justify-content: space-between
+	width: 40%
+	a
+		text-decoration: none
+		color: #0f0f0f
+		&:hover
+			color: $color
+	ul
+		padding: 0
+		margin: 0 30px
+.footer_item__logo
+	width: 25%
+	p
+		margin-top: 20px
+		font-size: 13px
+
+
 
 @import "media" // Всегда в конце
