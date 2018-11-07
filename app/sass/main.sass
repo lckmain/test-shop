@@ -45,6 +45,7 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+	background: #f4f6f8
 .img-responsive
 	display: block
 	max-width: 100%
@@ -53,7 +54,7 @@ body
 .text-center
 	text-align: center
 
-::selection
+::selection //за выделение текста
 	background-color: $accent
 	color: #fff
 //header
@@ -125,6 +126,80 @@ body
 		margin-top: 20px
 		font-size: 13px
 
+//feautured
+.featured__item_on-hover
+	display: none
+div.featured__item_default
+	div
+		img
+			margin: 0 auto
+			width: 60%
+.product-name
+	text-align: center
+	font-weight: 600
+	color: #34404b
+	margin: 20px 0
+.product-cost
+	text-align: center
+	color: #ff5912
+	margin: 20px 0 10px
+.featured__item
+	height: 340px
+	background-color: #fff
+	padding: 15px
+	display: flex
+	align-items: center
+	justify-content: center
+	&:hover
+		.featured__item_default
+			display: none
+		.featured__item_on-hover
+			display: block
+.featured__item_on-hover
+	img
+		width: 30%
+		margin: 0 auto 15px
+		display: block
+	.product-name
+		color: #ff5912
+.sizes
+	text-align: center
+.color-item
+	display: flex
+	align-items: center
+	justify-content: center
+	div
+		margin: 0 5px
+		input
+			display: none
+			&:checked
+				& ~ label
+					box-shadow: 0 0 5px
+		label
+			width: 15px
+			height: 15px
+			border-radius: 50%
+			background: green
+			cursor: pointer
+		&:nth-child(2)
+			label
+				background: red
+		&:nth-child(3)
+			label
+				background: yellow
+		&:nth-child(4)
+			label
+				background: blue
+.buttons
+	display: flex
+	justify-content: space-around
+	button
+		border: none
+		background: #ffffff
+		outline: none
+		&:hover
+			color: #ff5912
+
 // slider
 
 .slider_item
@@ -175,6 +250,7 @@ body
 	flex-direction: column
 	z-index: 999
 	transform: translateY(-50%)
+
 
 
 
