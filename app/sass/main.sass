@@ -125,6 +125,59 @@ body
 		margin-top: 20px
 		font-size: 13px
 
+// slider
+
+.slider_item
+	position: relative
+
+.slider_text
+	position: absolute
+	top: 50%
+	left: calc((100% - 1050px) / 2)
+	transform: translateY(-50%)
+	padding: 15px
+	background: rgba(255,255,255,0.8)
+	h2
+		color: $color
+	.slider_info_text_black
+		color: #0f0f0f
+	.slider_info_text_gray
+		color: #777
+		font-size: 13px
+	a
+		color: $color
+		margin-left: 20px
+		display: flex
+		align-items: center
+		i
+			margin-right: 5px
+
+.slider_button
+	display: flex
+	align-items: center
+.owl-dots
+	button
+		width: 15px
+		height: 15px
+		background: #fff!important
+		margin: 10px 0
+		transition: all 0.3s
+		outline: none!important
+		&.active
+			background: $color!important
+			height: 30px
+
+.owl-dots
+	position: absolute
+	top: 50%
+	left: calc((100% - 1170px) / 2)
+	display: flex
+	flex-direction: column
+	z-index: 999
+	transform: translateY(-50%)
+
+
+
 
 
 @import "media" // Всегда в конце
